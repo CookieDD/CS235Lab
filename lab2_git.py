@@ -82,9 +82,10 @@ def toss_coin():
     """TODO: Add your code here
         Hint: Using random.randint() function.
     """
-    vals = {"0" : "Head", "1":"Tail"}
-    coin = vals[str(random.randint(0,1))]
-    return coin
+    if (random.randint(0, 1) == 0):
+        return 'Head'
+    else:
+        return 'Tail'
 
 
 def read_input():
